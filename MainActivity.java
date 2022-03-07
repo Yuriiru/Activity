@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         public static final String TAG = "StartActivity";
 
-        private Integer count = 0;
+        private Integer count = 5;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
