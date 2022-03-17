@@ -4,22 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-import android.view.Menu;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public class StartActivity extends Activity {
-
-        public static final String TAG = "StartActivity";
+        public static final String TAG = "mylog";
 
         private Integer count = 5;
 
@@ -95,7 +86,5 @@ public class MainActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.txt_counter)).setText(count.toString());
             Log.d(TAG, "resetUI");
         }
-        
-    }
 
-}
+    }
